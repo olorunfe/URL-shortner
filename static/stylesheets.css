@@ -1,0 +1,475 @@
+
+/*general inheritance*/
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Gilroy-Medium', Gilroy-Medium;
+}
+
+body {
+    font-family: 'Gilroy-Medium', Gilroy-Medium;
+}
+
+/*all anchor parent inheritance*/
+a {
+    text-decoration: none;
+}
+
+/*hero class section's style*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+/*  top_section within the hero section,
+    this consists of the nav bar up until the signup button  */
+.top_hero {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 100%;
+    padding: 0 7rem;
+}
+
+/*  navbar at the top of the page, it's broken further to:
+    logo, navlinks, and button area  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+    object-fit: contain;
+}
+
+/* these styles the logo */
+/* .logo {} */
+.logo img {
+    width: 9.4rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+/* navlinks the centered list of topics*/
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.navlinks a {
+    color: #000;
+    font-size: 1.1rem;
+}
+.navlinks a:nth-child(1) {
+    color: #0065FE;
+}
+
+/* the button_area the two links have different class */
+.button_area {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    position: relative;
+    left: 1%;
+}
+.login {
+    color: #0065FE;
+}
+.signup {
+    color: #fff;
+    background-color: #0065FE;
+    border-radius: 100px;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    font-family: Gilroy-SemiBold;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+/* the header class div starts here */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+/* .url_shortening {
+    
+} */
+.url_shortening img {
+    max-width: 948px;
+    height: 200px;
+}
+
+/* styling short text on personalizing url */
+.personalize {
+    max-width: 781px;
+    align-content: center;
+}
+.personalize p {
+    color: #141414;
+    font-size: 18px;
+    font-family: Gilroy-Medium;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* signup design and positioning  */
+.signup_div {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1.5rem;
+    gap: 56px;
+}
+.signup_div a:nth-child(1) {
+    color: white;
+    font-size: 16px;
+    font-family: Gilroy-SemiBold;
+    font-weight: 400;
+    line-height: 12px;
+    word-wrap: break-word;
+}
+.signup_div a:nth-child(2) {
+    color: #0065FE;
+    font-size: 16px;
+    font-family: Gilroy-SemiBold;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* the mid_section starts here */
+.mid_hero {
+    margin-block-start: 56px;
+    max-width: 100%;
+    padding: 0;
+}
+.mid_hero img {
+    position: relative;
+    right: -395px;
+    padding: 0;
+    max-width: 833px;
+    height: 337px;
+}
+
+/* the lower_section of the hero section */
+.lower_hero {
+    max-width: 100%;
+    height: 93px;
+    position: relative;
+    top: -12px;
+    z-index: -1;
+    margin: 0;
+}
+.lower_hero img {
+    width: 100%;
+}
+
+/* short_info starts here */
+
+.short_info{
+    display: flex;
+    align-items:start;
+    justify-content:start;
+    gap: 35px;
+    background-color: #F9FBFD;
+    padding: 2rem 7rem;
+    margin-bottom: 7rem;
+}
+
+/* first class within*/
+.possibilities{
+    font-size: 40px;
+    width: 35%;
+}
+.possibilities p{
+    padding: 0;
+    margin: 0;
+}
+
+.possibilities b{
+    color: #005AE2;
+}
+/* second class within*/
+.usage_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.usage_info__box{
+    width: 123px;
+    color: #141414;
+}
+
+.usage_info__box h1{
+    font-size: 32px;
+}
+
+.usage_info__box p{
+    font-size: calc(32px / 2px);
+}
+
+/* the runs of desktop_10 */
+/* .desktop_10{
+} */
+/* first class within desktop_10 */
+.more_info{
+    display: flex;
+    padding: 0 7rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.scissor{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 40%;
+}
+
+.scissor div{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: #141414;
+    font-size: 32px;
+}
+
+.scissor img{
+    height: 48px;
+    object-fit: cover;
+
+    margin-top: 11px;
+}
+
+.scissor b{
+    color: #005AE2;
+}
+
+.scissor p{
+    color: #141414;
+    font-size: 16px;
+    margin-left: 1.35rem;
+
+    line-height: 28px;
+}
+
+.logo_windows{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    column-gap: 1.75rem;
+    width: 60%;
+}
+
+.box_1{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.box_1__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3284FF21;
+    width: 56px;
+    height: 56px;
+    border-radius: 1000px;
+}
+
+.box_1__img img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.write_up{
+    color: #141414;
+}
+
+.write_up h1{
+    font-size: 32px;
+}
+
+.write_up p{
+    font-size: calc(32px / 2px);
+    margin-top: 4px;
+    line-height: 24px;
+}
+
+/* section Desktop_1*/
+
+.Desktop_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+/* sub_div centere_patch */
+.centered_patch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+
+}
+
+.centered_patch div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #141414;
+    font-size: 32px;    
+}
+.centered_patch b{
+    color: #005AE2;
+}
+.centered_patch p{
+    color: #141414;
+    font-size: 16px;
+    line-height: 28px;
+    width: 85%;
+    text-align: center;
+}
+
+/* sub_div pricing */
+.pricing {
+    display: flex;
+    max-width: 100%;
+    margin-block: 68px;
+}
+
+.select_pricing{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 112px;
+}
+.select_pricing a:nth-child(1){
+    padding-inline: 28.5px;
+    padding-block: 18px;
+    border:#0065FE 1px solid;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+.select_pricing a:nth-child(2){
+    padding-inline: 49.5px;
+    padding-block: 18px;
+    background-color:#0065FE;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+/*Desktop_11*/
+.desktop_11 {
+    background-color: #1E3448;
+    max-width: 100%;
+}
+
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 84px;
+    padding-inline: 482px;
+    position: relative;
+    width: 392px;
+}
+
+.form{
+    background-color: #fff;
+    padding: 42px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+.form>input{
+    width: 100%;
+    height: 39px;
+    padding-left: 12px;
+    color: #3284FF;
+    font-size: 12px;
+    font-family: Gilroy-Medium;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: #3284FF 1px solid;
+}
+
+.form div{
+    margin-bottom: 24px;
+}
+
+.form div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+}
+
+#alias{
+    color: #3284FF;
+    padding-left: 12px;
+    padding-block: 18px;
+    font-size: 12px;
+    font-family: Gilroy-Medium;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 12px;
+    border: #3284FF 1px solid;
+
+}
+
+.form div.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding-block: 18px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #005AE2;
+}
+.form p{
+    font-size: 12px;
+    color: #3284FF;    
+}
+.form b{
+    color: #4991FF;
+}
+
+.pattern:nth-child(1){
+    position: absolute;
+    top: 15px;
+}
+
+/* optimize*/
+.optim img{
+    width: 100%;
+    height: 299px;
+    margin-top: 180px;
+}
+footer{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 561px;
+    margin-top: 180px;
+}
+footer img{
+    width: 100%;
+}
